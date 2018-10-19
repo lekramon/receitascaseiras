@@ -8,47 +8,60 @@ ul,ol li{
     list-style-type: none;
 }
 
-ul{
-    float: right;
-    padding-bottom: 100px;
-    padding-right: 20px;
+ul> li> :last-child{
+    font-style: italic;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover{
-color: #2d65ff;
-font-weight: 400;
-}
-
-.menu{
-background-color: rgb(255, 115, 0);
+    color: #2d65ff;
+    font-weight: 400;
 }
 
 .menu li{
     display: inline;
-    padding-left: 50px;
+    padding: 35px;
     font-size: 20px;
     font-weight: bold;
+    opacity: 1.0;
 }
 
+.menu{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    opacity: 0.6;
+}
+
+
 .menu img{
-width: 50px;
+    width: 50px;
 }
 
 .estilo-imagem{
     border: solid 2px;
     border-radius: 240px;
     width: 500px;
-    margin-top: 100px;
 }
 
 .banner h1{
     font-family: 'Kanit', sans-serif;
     font-size: 50px;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.banner p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
 }
 
 .banner{
@@ -57,4 +70,35 @@ width: 50px;
     text-align: center;
     background-image: url(../images/boloback.jfif);
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer >div{
+    justify-content: space-evenly;
+    display: flex;
+    background-color: rgb(238 180 34);
+}
+
+.container{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: row wrap;
+}
+
+.coberturaimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre-bolo{
+    margin: 50px;
+}
+
+.lista-footer > div > ol > li:first-child{
+font-weight: bold;
 }
